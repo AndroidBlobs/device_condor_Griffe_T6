@@ -1,0 +1,84 @@
+#
+# from device/sprd/sharkl2/sp9850ka_1h10_go/system.prop
+#
+# Default density config
+ro.sf.lcd_density=240
+ro.sf.lcd_width=54
+ro.sf.lcd_height=96
+ro.product.hardware=sc9850ka_1h10_v1.1.0
+sys.hardware.version=SC9850_2_IRD_K_V1.1.0
+# Set Opengl ES Version 3.2
+ro.opengles.version=196610
+
+ro.fm.chip.port.UART.androidm=false
+
+# set camera flash bettery level
+persist.sys.cam.battery.flash=10
+
+# FRP property for pst device
+ro.frp.pst=/dev/block/platform/soc/soc:ap-ahb/20600000.sdio/by-name/persist
+
+persist.sys.cam.filter.highfps=true
+
+#open camera location recording function
+persist.sys.cam.gps=true
+
+#enable audio nr tuning
+ro.audio_tunning.nr=1
+
+qemu.hw.mainkeys=0
+
+# Disable the lock screen wallpaper
+ro.lockwallpaper.enable=false
+
+persist.sys.cam.sfv.alter=true
+
+# Set softap management function
+persist.wifi.func.hidessid=true
+ro.wifi.softap.maxstanum=10
+
+#Enable sdcardfs feature
+ro.sys.sdcardfs=true
+persist.sys.sdcardfs=force_on
+#use sprd define media_profiles
+media.settings.xml = vendor/etc/media_profiles_turnkey.xml
+
+#condor
+ro.com.google.clientidbase=android-condor
+
+# only for factory test
+# front_blur, back_blur, front_sbs, back_sbs, normal, ...
+persist.sys.cam3.type=back_sbs
+# if third camera can work alone, open cam id
+persist.sys.cam3.single.cam.id=2
+# if thrid camera cant work alone, open cam id
+persist.sys.cam3.multi.cam.id=12
+
+#sbs blur enable
+persist.sys.cam.ba.blur.version=0
+persist.sys.cam.sr.enable=true
+
+#enable imageblending
+persist.sys.blending.enable=true
+
+#support quick thumbnail
+persist.sys.cam.fast.blur=true
+persist.sys.cam.fast.normal=false
+
+#Disable assistant touch
+ro.product.assistanttouch=false
+
+#face_beauty lib   0--close_fb  1--srcsoft  2--sprd
+persist.sys.cam.facebeauty.corp=2
+
+#sprd_fb lib feature switch  0--part func  1--full func
+persist.sys.cam.beauty.fullfuc=false
+
+#Enalbe blur mode
+persist.sys.cam.fr.blur.version=1
+persist.sys.cam.blur.cov.id=3
+
+#faceid version    0--disable  1--single_camera  2--dual_camera
+persist.sys.cam.faceid.version=0
+
+#
